@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
 
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
+        supportActionBar?.title = "Phan Manh Tung - 2415053122347"
         setupRealtimeValidation()
 
         binding.btnRegister.setOnClickListener {

@@ -11,16 +11,13 @@ class DetailActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
         binding = ActivityDetailBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
+        supportActionBar?.title = "Phan Manh Tung - 2415053122347"
         displayRegistrationInfo()
-
         binding.btnBack.setOnClickListener {
             finish()
         }
-
         Snackbar.make(
             binding.root,
             "Đăng ký thành công",
