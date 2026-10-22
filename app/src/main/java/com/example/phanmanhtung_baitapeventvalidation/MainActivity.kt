@@ -98,7 +98,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun openDetailScreen() {
-        val intent = Intent().apply {
+        val intent = Intent(this, DetailActivity::class.java).apply {
             putExtra(
                 RegistrationExtras.FULL_NAME,
                 binding.edtFullName.text.toString().trim()
